@@ -43,7 +43,10 @@ function total() {
 function removeFromCart(item) {
   cart.forEach( (cartItem, i) => {
     if (item === cartItem.itemName) {
-      cart.splice(i,1)
+      cart.splice(i,1);
+      return cart;
+    } else {
+      return 
     }
   })
   
