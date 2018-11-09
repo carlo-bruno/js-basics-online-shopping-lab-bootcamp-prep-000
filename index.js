@@ -41,7 +41,10 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if ( item == )
+  cart.forEach(item => {
+    if ()
+  })
+  
 }
 
 function placeOrder(cardNumber) {
