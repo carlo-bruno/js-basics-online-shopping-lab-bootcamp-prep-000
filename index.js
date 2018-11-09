@@ -27,7 +27,9 @@ function viewCart() {
   }
   )
   
-  return `In your cart, you have ${cartItemsAndPrice.join(', ')}.`
+  let longString = cartItemsAndPrice.splice
+  
+  return `In your cart, you have ${longString}.`
 }
 
 function total() {
