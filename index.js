@@ -41,8 +41,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  cart.splice(cart.indexOf(item))
-  return cart
+  cart.splice(cart.indexOf(item));
+  return cart;
 }
 
 function placeOrder(cardNumber) {
