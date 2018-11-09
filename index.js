@@ -27,7 +27,7 @@ function viewCart() {
   }
   )
   
-  let longString = cartItemsAndPrice.splice
+  let longString = `${cartItemsAndPrice.slice(0,-1).join(', ')} and ${cartItemsAndPrice[-1]}`;
   
   return `In your cart, you have ${longString}.`
 }
