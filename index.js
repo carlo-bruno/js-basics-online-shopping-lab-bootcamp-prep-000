@@ -27,7 +27,7 @@ function viewCart() {
   }
   )
   
-  let longString = `${cartItemsAndPrice.slice(0,-1).join(', ')}, and ${cartItemsAndPrice.slice(-1)}`;
+  let longString = cartItemsAndPrice.length === 1 ? cartItemsAndPrice[0] : `${cartItemsAndPrice.slice(0,-1).join(', ')}, and ${cartItemsAndPrice.slice(-1)}`;
   
   return `In your cart, you have ${longString}.`
 }
